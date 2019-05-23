@@ -38,5 +38,22 @@ public class Main {
             }
         });
         System.out.println(cars);
+
+        Collections.sort(cars, new Comparator() {
+            @Override
+            public int compare(Object o1, Object o2) {
+                return ((Car) o1).getName().compareTo(((Car) o2).getName());
+            }
+        });
+        System.out.println(cars);
+
+        Collections.sort(cars, new Comparator() {
+            @Override
+            public int compare(Object o1, Object o2) {
+                return -((Car) o1).getName().compareTo(((Car)o2).getName());
+            }
+        });
+        System.out.println(cars);
     }
+
 }
