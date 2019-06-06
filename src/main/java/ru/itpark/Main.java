@@ -3,10 +3,11 @@ package ru.itpark;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        ArrayList cars = new ArrayList();
+        List<Car> cars = new ArrayList<Car>();
         cars.add(new Car("Toyota", 2014, 1300000));
         cars.add(new Car("Opel", 2007, 500000));
         cars.add(new Car("Nissan", 2016, 1100000));
